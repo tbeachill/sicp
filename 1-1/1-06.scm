@@ -14,8 +14,6 @@
             (sqrt-iter (improve guess x)
                        x)))
 
-#|
-The new-if will be evaluated using applicative order, rather than normal order.
-As the sqrt-iter procedure calls new-if and new-if calls sqrt-iter as its else-clause
-the two procedures will call each other cyclically until a stack overflow occurs.
-|#
+; The new-if will be evaluated using applicative order, rather than normal order.
+; As the sqrt-iter procedure calls new-if and new-if calls sqrt-iter as its else-clause
+; the two procedures will call each other cyclically until a stack overflow occurs.
