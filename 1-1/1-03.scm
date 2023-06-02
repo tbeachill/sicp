@@ -8,8 +8,6 @@
 (define (ssTwoLargest x y z)
     (cond ((and (<= x y) (<= x z)) (ss y z))
           ((and (<= y x) (<= y z)) (ss x z))
-          (else (ss x y))
-    )
-)
+          (else (ss x y))))
 
 (ssTwoLargest 2 4 6)
